@@ -1,7 +1,7 @@
 # SudoPhishing-POC
 
 ## Description
-This is a Proof of Concept to show that [SudoPhishing](https://github.com/jlxip/SudoPhishing) can be used to perform privilege escalation. Run it, wait a few seconds, and a file called `evidence.txt` will appear in `/tmp`, which will be owned by root.
+This is a Proof of Concept to show that [SudoPhishing](https://github.com/jlxip/SudoPhishing) can be used to perform privilege escalation. Run it, open a new terminal, sudo something, wait a few seconds, and a file called `evidence.txt` will appear in `/tmp`, which will be owned by root.
 
 ## Method
 This program is quite simple.
