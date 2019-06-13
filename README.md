@@ -11,7 +11,7 @@ When it runs, it unpacks to `/tmp` SudoPhishing and autosudo, which is a tiny pr
 Once the binaries are dropped, it will run SudoPhishing, and wait for `~/.config/._` to be created. Then, it will locally set `SUDO_ASKPASS` to autosudo, and execute itself. If the program detects it's running as root, it creates `/tmp/evidence.txt`, and ends. Most of the changes will be undone, such as the unpacked files and those created by SudoPhishing, but the shell profile will not be reversed, as creating a backup would have required some more code and the purpose was to keep this simple.
 
 ## Compilation
-In the same way as SudoPhishing, compilation requires both `TCC` and `python2`. Just run `make` and the file `poc` will appear.
+As SudoPhishing is a submodule of this repository, you must clone the POC with the `--recursive` argument in git. Compilation requires both `TCC` and `python2`. Just run `make` and the file `poc` will appear.
 
 ## Copyleft
 Copyright (C) 2019 jlxip
